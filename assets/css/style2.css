@@ -1,0 +1,55 @@
+.preloader-background {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: red;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;	
+}
+
+#board{
+	width: 360px;
+	margin: 40px auto 0 auto;
+}
+
+.myRow{
+	clear: both;
+	overflow: hidden;
+}
+
+.tile{
+	float: left;
+	width: 120px;
+	height: 120px;
+	cursor: pointer;
+}
+
+.bottomLine{
+	border-bottom: 2px solid brown;
+}
+
+.rightLine{
+	border-right: 2px solid brown;
+}
+
+.x{
+	background: transparent url('../img/x.png');
+    background-repeat: no-repeat;
+}
+
+.o{
+	background: transparent url('../img/o.png');
+    background-repeat: no-repeat;
+}
+
+.clear{
+	background: #FFFFFF;
+}
+
+.tile .active{
+	pointer-events: auto;
+}
